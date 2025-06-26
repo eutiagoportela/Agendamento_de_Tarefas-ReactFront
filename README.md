@@ -1,273 +1,239 @@
-# 📋 Task Manager - Frontend React <br/><br/>
-Uma interface moderna e responsiva para gerenciamento de tarefas, construída com React 18 e tecnologias de ponta para proporcionar a melhor experiência do usuário.<br/><br/>
-🚀 Tecnologias Utilizadas<br/><br/>
-Core Frontend<br/>
+# 📋 Task Manager - Frontend React
 
-React 18 - Biblioteca principal para interface do usuário<br/>
-JavaScript ES6+ - Linguagem de programação moderna<br/>
-Tailwind CSS - Framework CSS utility-first para estilização<br/>
-Lucide React - Biblioteca de ícones moderna e consistente<br/>
+Uma interface moderna e responsiva para gerenciamento de tarefas, construída com React 18 e tecnologias de ponta para proporcionar a melhor experiência do usuário.
 
-Tooling & Build<br/><br/>
+## 🚀 Tecnologias Utilizadas
 
-Vite - Build tool rápido e moderno<br/>
-ESLint - Linter para qualidade de código<br/>
-Prettier - Formatação automática de código<br/>
-PostCSS - Processamento de CSS<br/>
+### **Core Frontend**
+- **React 18** - Biblioteca principal para interface do usuário
+- **JavaScript ES6+** - Linguagem de programação moderna
+- **Tailwind CSS** - Framework CSS utility-first para estilização
+- **Lucide React** - Biblioteca de ícones moderna e consistente
 
-HTTP & State Management<br/><br/>
+### **Tooling & Build**
+- **Vite** - Build tool rápido e moderno
+- **ESLint** - Linter para qualidade de código
+- **Prettier** - Formatação automática de código
+- **PostCSS** - Processamento de CSS
 
-Axios - Cliente HTTP para requisições à API<br/>
-React Context - Gerenciamento de estado global<br/>
-LocalStorage - Persistência de dados do usuário<br/>
-Custom Hooks - Lógica compartilhada e reutilizável<br/>
+### **HTTP & State Management**
+- **Axios** - Cliente HTTP para requisições à API
+- **React Context** - Gerenciamento de estado global
+- **LocalStorage** - Persistência de dados do usuário
+- **Custom Hooks** - Lógica compartilhada e reutilizável
 
-Validação & Forms<br/><br/>
+## 🎯 Funcionalidades do Sistema
 
-Validação customizada - Validadores específicos para o domínio<br/>
-Controlled Components - Formulários controlados pelo React<br/>
-Real-time validation - Feedback instantâneo ao usuário<br/>
+### **🔐 Autenticação**
+- **Login**: Autenticação segura com validação de campos
+- **Registro**: Cadastro de usuários com verificação de email único
+- **Logout**: Encerramento seguro de sessão
+- **Proteção de Rotas**: Redirecionamento automático para usuários não autenticados
+- **Persistência de Sessão**: Manutenção da sessão via localStorage
 
-⚛️ Arquitetura Frontend<br/><br/>
-🎯 Princípios Arquiteturais<br/>
+### **👤 Gestão de Perfil**
+- **Edição de Perfil**: Atualização completa de dados do usuário
+- **Alteração de Dados**: Nome, email e senha
+- **Validações de Segurança**: Confirmação de senha obrigatória
+- **Feedback Visual**: Estados de loading e mensagens de sucesso/erro
 
-Component-Driven Development - Desenvolvimento orientado a componentes<br/>
-Separation of Concerns - Separação clara de responsabilidades<br/>
-Single Responsibility Principle - Cada componente/hook com uma função específica<br/>
-Custom Hooks Pattern - Lógica de negócio isolada e reutilizável<br/>
-Service Layer - Abstração da comunicação com APIs<<br/>
+### **📋 Gerenciamento de Tarefas**
+- **Cadastro de Tarefa**: Criação com título, descrição, data de vencimento e prioridade
+- **Edição de Tarefa**: Modificação completa de dados da tarefa
+- **Exclusão de Tarefa**: Remoção com confirmação
+- **Conclusão de Tarefa**: Marcar tarefa como concluída
+- **Visualização**: Lista organizada com status visuais
 
-# 🧩 Padrões de Componentização<br/><br/>
-📦 Componentes por Responsabilidade<br/>
+### **🔔 Sistema de Lembretes**
+- **Lembrete Opcional**: Adicionar lembretes às tarefas
+- **Notificações**: Alertas visuais para tarefas com lembrete
+- **Marcar Lembrete**: Controle manual de lembretes lidos
+- **Modal Interativo**: Detalhes completos da tarefa no lembrete
+
+### **🔍 Busca e Filtros**
+- **Busca em Tempo Real**: Por título e descrição
+- **Filtros por Status**: Todas, pendentes, concluídas
+- **Filtros por Prioridade**: Alta, média, baixa
+- **Contadores Dinâmicos**: Estatísticas em tempo real
+
+## 📱 Telas da Aplicação
+
+### **Login** (`/login`)
+![Login](https://github.com/user-attachments/assets/5ee405d9-eded-4b37-b3c2-eec6e06747f3)
+
+### **Registro** (`/register`)
+![Registro](https://github.com/user-attachments/assets/53d8f6fd-beca-41e1-963f-8e69e229ce8b)
+
+### **Dashboard** (`/dashboard`)
+![Dashboard](https://github.com/user-attachments/assets/666f6c79-2556-4bc6-8c84-397717825910)<br/>
+![Filtros](https://github.com/user-attachments/assets/9df37da9-d8d2-4167-adcb-f012dd91edc2)<br/>
+![Nova Tarefa](https://github.com/user-attachments/assets/20bcc0b1-e0bc-459e-ae89-5d481fb652d4)<br/>
+![Editar Tarefa](https://github.com/user-attachments/assets/94571a51-c64f-4030-accf-6d93f78810ed)<br/>
+![Lembretes](https://github.com/user-attachments/assets/eaa91ccb-fdbd-4c9e-81f0-53be978976a8)<br/>
+![Modal Lembrete](https://github.com/user-attachments/assets/1c432cd2-6aac-43c3-8b3e-8b04dadabbad)<br/>
+![Editar Perfil](https://github.com/user-attachments/assets/9024d243-1901-4bb7-bc59-ddea64423cbc)<br/>
+![Excluir Tarefa](https://github.com/user-attachments/assets/935ba295-04db-4d12-92c3-becc4b4db7f9)<br/>
+![Busca](https://github.com/user-attachments/assets/325098e8-8b35-4a06-9df9-63f60e5398d6)<br/>
+
+## 🏗️ Estrutura do Projeto
+
+```
+📦 frontend/
+├── 📂 public/                    # Assets estáticos
+│   ├── 📄 favicon.ico           # Favicon da aplicação
+│   ├── 📄 logo192.png           # Logo para PWA
+│   └── 📄 manifest.json         # Configuração PWA
+├── 📂 src/                      # Código fonte
+│   ├── 📂 components/           # Componentes React
+│   │   ├── 📂 ui/              # Componentes base
+│   │   │   ├── 📄 Button.jsx   # Componente de botão
+│   │   │   ├── 📄 Input.jsx    # Componente de input
+│   │   │   ├── 📄 Modal.jsx    # Componente de modal
+│   │   │   ├── 📄 Loading.jsx  # Componente de loading
+│   │   │   └── 📄 Notification.jsx # Sistema de toasts
+│   │   ├── 📂 layout/          # Componentes de layout
+│   │   │   ├── 📄 Header.jsx   # Cabeçalho da aplicação
+│   │   │   ├── 📄 Layout.jsx   # Wrapper principal
+│   │   │   └── 📄 ProtectedRoute.jsx # Proteção de rotas
+│   │   ├── 📂 tasks/           # Componentes de tarefas
+│   │   │   ├── 📄 TaskList.jsx # Lista de tarefas
+│   │   │   ├── 📄 TaskForm.jsx # Formulário de tarefa
+│   │   │   ├── 📄 TaskCard.jsx # Card de tarefa individual
+│   │   │   ├── 📄 TaskStats.jsx # Estatísticas
+│   │   │   └── 📄 EditProfileModal.jsx # Edição de perfil
+│   │   ├── 📂 reminders/       # Sistema de lembretes
+│   │   │   ├── 📄 ReminderSimple.jsx # Componente principal
+│   │   │   └── 📄 ReminderModal.jsx  # Modal de lembrete
+│   │   └── 📂 auth/            # Componentes de autenticação
+│   │       ├── 📄 LoginForm.jsx # Formulário de login
+│   │       └── 📄 RegisterForm.jsx # Formulário de cadastro
+│   ├── 📂 hooks/               # Custom Hooks
+│   │   ├── 📄 useAuth.js       # Hook de autenticação
+│   │   ├── 📄 useNotifications.js # Hook de notificações
+│   │   └── 📄 useLocalStorage.js  # Hook de localStorage
+│   ├── 📂 services/            # Serviços de API
+│   │   ├── 📄 api.js           # Configuração do Axios
+│   │   ├── 📄 authService.js   # Serviços de autenticação
+│   │   ├── 📄 taskService.js   # Serviços de tarefas
+│   │   └── 📄 userService.js   # Serviços de usuário
+│   ├── 📂 utils/               # Utilitários
+│   │   ├── 📄 helpers.js       # Funções auxiliares
+│   │   ├── 📄 validators.js    # Validadores
+│   │   ├── 📄 formatters.js    # Formatadores
+│   │   └── 📄 constants.js     # Constantes
+│   ├── 📂 pages/               # Páginas da aplicação
+│   │   ├── 📄 Login.jsx        # Página de login
+│   │   ├── 📄 Register.jsx     # Página de cadastro
+│   │   ├── 📄 Dashboard.jsx    # Dashboard principal
+│   │   └── 📄 NotFound.jsx     # Página 404
+│   ├── 📂 contexts/            # React Contexts
+│   │   └── 📄 AuthContext.jsx  # Context de autenticação
+│   ├── 📄 App.jsx              # Componente raiz
+│   ├── 📄 index.js             # Entry point
+│   └── 📄 index.css            # Estilos base
+├── 📄 .env.example             # Exemplo de variáveis de ambiente
+├── 📄 .env.local               # Variáveis de ambiente (local)
+├── 📄 package.json             # Dependências e scripts
+├── 📄 tailwind.config.js       # Configuração do Tailwind
+├── 📄 vite.config.js           # Configuração do Vite
+└── 📄 README.md                # Documentação
+```
+
+## 🧩 Arquitetura de Componentes
+
+### **📦 Componentes por Responsabilidade**
 ```
 ├── ui/              # 🎨 Componentes base reutilizáveis
-│   ├── Button       # ← Botões padronizados
-│   ├── Input        # ← Campos de entrada
-│   ├── Modal        # ← Modais base
-│   └── Loading      # ← Estados de carregamento
 ├── layout/          # 🏗️ Estrutura da aplicação
-│   ├── Header       # ← Cabeçalho com navegação
-│   ├── Sidebar     # ← Menu lateral (se necessário)
-│   └── Layout       # ← Wrapper principal
 ├── tasks/           # 📋 Componentes específicos de tarefas
-│   ├── TaskList     # ← Lista de tarefas
-│   ├── TaskForm     # ← Formulário de criação/edição
-│   ├── TaskCard     # ← Card individual de tarefa
-│   └── TaskStats    # ← Estatísticas de tarefas
 ├── reminders/       # 🔔 Sistema de lembretes
-│   ├── ReminderSimple # ← Componente principal de lembretes
-│   └── ReminderModal  # ← Modal de lembrete ativo
 └── auth/            # 🔐 Componentes de autenticação
-    ├── LoginForm    # ← Formulário de login
-    └── RegisterForm # ← Formulário de cadastro
+```
 
-🎣 Custom Hooks Especializados
-javascript🔗 Hooks por Domínio
+### **🎣 Custom Hooks Especializados**
+```
 ├── useAuth          # 🔐 Autenticação e autorização
-│   ├── login()      # ← Realizar login
-│   ├── logout()     # ← Realizar logout
-│   ├── register()   # ← Cadastrar usuário
-│   └── user         # ← Estado do usuário logado
 ├── useNotifications # 📢 Sistema de notificações
-│   ├── success()    # ← Notificação de sucesso
-│   ├── error()      # ← Notificação de erro
-│   └── notifications # ← Lista de notificações ativas
 └── useLocalStorage  # 💾 Persistência local
-    ├── setItem()    # ← Salvar item
-    ├── getItem()    # ← Recuperar item
-    └── removeItem() # ← Remover item
+```
 
-🌐 Camada de Serviços
-javascript📡 Services por Domínio
+### **🌐 Camada de Serviços**
+```
 ├── api.js           # ⚙️ Configuração base do Axios
-│   ├── baseURL      # ← URL base da API
-│   ├── interceptors # ← Interceptadores de request/response
-│   └── headers      # ← Headers padrão (Authorization)
 ├── authService.js   # 🔐 Serviços de autenticação
-│   ├── login()      # ← POST /auth/login
-│   ├── register()   # ← POST /auth/register
-│   └── refresh()    # ← POST /auth/refresh
 ├── taskService.js   # 📋 Serviços de tarefas
-│   ├── getTasks()   # ← GET /tarefa
-│   ├── createTask() # ← POST /tarefa
-│   ├── updateTask() # ← PUT /tarefa/{id}
-│   ├── deleteTask() # ← DELETE /tarefa/{id}
-│   └── completeTask() # ← PATCH /tarefa/{id}/concluir
 └── userService.js   # 👤 Serviços de usuário
-    ├── updateProfile() # ← PUT /usuario/{id}
-    ├── getCurrentProfile() # ← Dados do localStorage
-    └── isLoggedIn()   # ← Verificar autenticação
 ```
-# 📥 Instalação e Configuração<br/><br/>
-1. Pré-requisitos<br/>
-bash# Verificar versões necessárias<br/>
-node --version    # v18.0.0+ requerido<<br/>
-npm --version     # v8.0.0+ requerido<br/><br/><br/>
-2. Clone e Instalação<br/>
-bash# Clonar o repositório<br/>
-git clone https://github.com/seu-usuario/task-manager-frontend.git<br/>
-cd task-manager-frontend<br/>
 
- Instalar dependências<br/><br/>
-npm install<br/>
- ou<br/>
-yarn install<br/><br/>
-3. Configuração de Ambiente<br/><br/>
-bash# Criar arquivo de ambiente<br/>
-cp .env.example .env.local<br/><br/>
+## 📥 Instalação e Configuração
 
-# Configurar variáveis (editar .env.local)<br/>
-REACT_APP_API_URL=http://localhost:5000/api<br/>
-REACT_APP_APP_NAME=Task Manager<br/>
-REACT_APP_VERSION=1.0.0<br/><br/>
-4. Executar em Desenvolvimento<br/>
-bash# Iniciar servidor de desenvolvimento<br/>
-npm run dev<br/>
- ou<br/>
-yarn dev<br/>
-
- Aplicação disponível em:<br/>
-http://localhost:3000<br/>
-
-# 🏗️ Estrutura do Projeto<br/>
+### **1. Pré-requisitos**
+```bash
+# Verificar versões necessárias
+node --version    # v18.0.0+ requerido
+npm --version     # v8.0.0+ requerido
 ```
-frontend/
-├── public/                    # 📁 Assets estáticos
-│   ├── favicon.ico           # ← Favicon da aplicação
-│   ├── logo192.png           # ← Logo para PWA
-│   └── manifest.json         # ← Configuração PWA
-├── src/                      # 📦 Código fonte
-│   ├── components/           # 🧩 Componentes React
-│   │   ├── ui/              # 🎨 Componentes base
-│   │   │   ├── Button.jsx   # ← Componente de botão
-│   │   │   ├── Input.jsx    # ← Componente de input
-│   │   │   ├── Modal.jsx    # ← Componente de modal
-│   │   │   ├── Loading.jsx  # ← Componente de loading
-│   │   │   └── Notification.jsx # ← Sistema de toasts
-│   │   ├── layout/          # 🏗️ Componentes de layout
-│   │   │   ├── Header.jsx   # ← Cabeçalho da aplicação
-│   │   │   ├── Layout.jsx   # ← Wrapper principal
-│   │   │   └── ProtectedRoute.jsx # ← Proteção de rotas
-│   │   ├── tasks/           # 📋 Componentes de tarefas
-│   │   │   ├── TaskList.jsx # ← Lista de tarefas
-│   │   │   ├── TaskForm.jsx # ← Formulário de tarefa
-│   │   │   ├── TaskCard.jsx # ← Card de tarefa individual
-│   │   │   ├── TaskStats.jsx # ← Estatísticas
-│   │   │   └── EditProfileModal.jsx # ← Edição de perfil
-│   │   ├── reminders/       # 🔔 Sistema de lembretes
-│   │   │   ├── ReminderSimple.jsx # ← Componente principal
-│   │   │   └── ReminderModal.jsx  # ← Modal de lembrete
-│   │   └── auth/            # 🔐 Componentes de auth
-│   │       ├── LoginForm.jsx # ← Formulário de login
-│   │       └── RegisterForm.jsx # ← Formulário de cadastro
-│   ├── hooks/               # 🎣 Custom Hooks
-│   │   ├── useAuth.js       # ← Hook de autenticação
-│   │   ├── useNotifications.js # ← Hook de notificações
-│   │   └── useLocalStorage.js  # ← Hook de localStorage
-│   ├── services/            # 🌐 Serviços de API
-│   │   ├── api.js           # ← Configuração do Axios
-│   │   ├── authService.js   # ← Serviços de auth
-│   │   ├── taskService.js   # ← Serviços de tarefas
-│   │   └── userService.js   # ← Serviços de usuário
-│   ├── utils/               # 🛠️ Utilitários
-│   │   ├── helpers.js       # ← Funções auxiliares
-│   │   ├── validators.js    # ← Validadores
-│   │   ├── formatters.js    # ← Formatadores
-│   │   └── constants.js     # ← Constantes
-│   ├── styles/              # 🎨 Estilos
-│   │   ├── index.css        # ← Estilos globais + Tailwind
-│   │   └── components.css   # ← Estilos específicos
-│   ├── pages/               # 📄 Páginas da aplicação
-│   │   ├── Login.jsx        # ← Página de login
-│   │   ├── Register.jsx     # ← Página de cadastro
-│   │   ├── Dashboard.jsx    # ← Dashboard principal
-│   │   └── NotFound.jsx     # ← Página 404
-│   ├── contexts/            # 🏪 React Contexts
-│   │   └── AuthContext.jsx  # ← Context de autenticação
-│   ├── App.jsx              # ⚛️ Componente raiz
-│   ├── App.css              # 🎨 Estilos do App
-│   ├── index.js             # 🚀 Entry point
-│   └── index.css            # 🎨 Estilos base
-├── .env.example             # 🔐 Exemplo de variáveis de ambiente
-├── .env.local               # 🔐 Variáveis de ambiente (local)
-├── .gitignore               # 📋 Arquivos ignorados pelo Git
-├── package.json             # 📦 Dependências e scripts
-├── tailwind.config.js       # 🎨 Configuração do Tailwind
-├── postcss.config.js        # ⚙️ Configuração do PostCSS
-├── vite.config.js           # ⚡ Configuração do Vite
-└── README.md                # 📖 Documentação
+
+### **2. Clone e Instalação**
+```bash
+# Clonar o repositório
+git clone https://github.com/seu-usuario/task-manager-frontend.git
+cd task-manager-frontend
+
+# Instalar dependências
+npm install
+# ou
+yarn install
 ```
-<br/><br/>
-# 🎯 Funcionalidades Implementadas<br/>
-🔐 Autenticação & Autorização<br/><br/>
 
-✅ Login seguro com validação de campos<br/>
-✅ Cadastro de usuários com verificação de email único<br/>
-✅ Logout automático quando token expira<br/>
-✅ Proteção de rotas - redirecionamento automático<br/>
-✅ Persistência de sessão via localStorage<br/>
-✅ Recuperação de sessão ao recarregar a página<br/>
+### **3. Configuração de Ambiente**
+```bash
+# Criar arquivo de ambiente
+cp .env.example .env.local
 
-📋 Gerenciamento de Tarefas<br/><br/>
+# Configurar variáveis (editar .env.local)
+REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_APP_NAME=Task Manager
+REACT_APP_VERSION=1.0.0
+```
 
-✅ CRUD completo - Criar, visualizar, editar, excluir<br/>
-✅ Validações robustas - campos obrigatórios, formato de dados<br/>
-✅ Estados visuais - pendente, concluída, vencida<<br/>
-✅ Prioridades - baixa, média, alta com cores distintas<br/>
-✅ Datas de vencimento - controle de prazos<br/>
-✅ Contadores dinâmicos - estatísticas em tempo real<br/>
+### **4. Executar em Desenvolvimento**
+```bash
+# Iniciar servidor de desenvolvimento
+npm run dev
+# ou
+yarn dev
 
-🔍 Busca & Filtros<br/><br/>
+# Aplicação disponível em:
+# http://localhost:3000
+```
 
-✅ Busca em tempo real - por título e descrição<br/>
-✅ Filtros por status - todas, pendentes, concluídas<br/>
-✅ Filtros por prioridade - todas, alta, média, baixa<br/>
-✅ Ordenação - por data, título, prioridade<br/>
-✅ Contadores de resultados - feedback visual da busca<br/>
-✅ Limpar filtros - reset rápido dos critérios<br/>
+## 🌐 URLs da Aplicação
 
-🔔 Sistema de Lembretes<br/><br/>
+- **Desenvolvimento**: http://localhost:3000
+- **Login**: http://localhost:3000/login
+- **Cadastro**: http://localhost:3000/register
+- **Dashboard**: http://localhost:3000/dashboard
 
-✅ Lembretes opcionais por tarefa<br/>
-✅ Notificações em tempo real - modal interativo<br/>
-✅ Controle total do usuário - marcar como lido quando quiser<br/>
-✅ Indicator visual - sino com badge de contagem<<br/>
-✅ Modal informativo - detalhes completos da tarefa<br/>
-✅ Ações rápidas - concluir ou reagendar diretamente<br/>
+## ⚡ Performance & Otimização
 
-👤 Gestão de Perfil<br/><br/>
+### **Características Implementadas**
+- ✅ **Lazy loading** - Componentes carregados sob demanda
+- ✅ **Memoização** - React.memo em componentes pesados
+- ✅ **Debounce** - Otimização de busca em tempo real
+- ✅ **Code splitting** - Bundles otimizados
+- ✅ **Cache inteligente** - Dados persistidos localmente
+- ✅ **Fast refresh** - Desenvolvimento otimizado com Vite
 
-✅ Edição completa - nome, email, senha<br/>
-✅ Validações de segurança - confirmação de senha obrigatória<br/>
-✅ Feedback visual - loading states e mensagens de sucesso/erro<br/>
-✅ Atualização em tempo real - reload automático após alterações<br/>
-✅ Proteção de dados - validação de email único no backend<br/>
-✅ UX intuitiva - modal acessível via clique no avatar<br/>
+## 🎨 Interface & UX
 
-🎨 Interface & UX<br/><br/>
+### **Características de Design**
+- ✅ **Design responsivo** - Mobile-first com Tailwind CSS
+- ✅ **Estados de loading** - Feedback durante requisições
+- ✅ **Sistema de notificações** - Toasts para ações do usuário
+- ✅ **Modais interativos** - Formulários e confirmações
+- ✅ **Indicadores visuais** - Status da API, contadores, badges
+- ✅ **Acessibilidade** - Labels apropriados, contrast ratios
 
-✅ Design responsivo - mobile-first com Tailwind CSS<br/>
-✅ Estados de loading - feedback durante requisições<br/>
-✅ Sistema de notificações - toasts para ações do usuário<br/>
-✅ Modais interativos - formulários e confirmações<br/>
-✅ Indicadores visuais - status da API, contadores, badges<br/>
-✅ Acessibilidade - labels apropriados, contrast ratios<br/>
-
-⚡ Performance & Otimização<br/><br/>
-
-✅ Lazy loading - componentes carregados sob demanda<br/>
-✅ Memoização - React.memo em componentes pesados<br/>
-✅ Debounce - otimização de busca em tempo real<br/>
-✅ Code splitting - bundles otimizados<br/>
-✅ Cache inteligente - dados persistidos localmente<br/>
-✅ Fast refresh - desenvolvimento otimizado com Vite<br/>
-
-
-<br/><br/>
-Desenvolvimento: http://localhost:3000<br/>
-Login: http://localhost:3000/login<br/>
-Cadastro: http://localhost:3000/register<br/>
-Dashboard: http://localhost:3000/dashboard<br/>
-
-
-
+  ##BackEnd:
+  - Se encontra em: https://github.com/eutiagoportela/Agendamento_de_Tarefas_API.Net-BackEnd
